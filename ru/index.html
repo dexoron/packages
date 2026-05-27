@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dexoron Package Registry</title>
+    <title>Dexoron — Реестр пакетов</title>
     <style>
         * {
             margin: 0;
@@ -232,35 +232,35 @@
         <div class="header">
             <h1><span>dexoron</span> / packages</h1>
             <div class="lang">
-                <a href="./" class="active">EN</a>
-                <a href="./ru/">RU</a>
+                <a href="../">EN</a>
+                <a href="../ru/" class="active">RU</a>
             </div>
         </div>
 
         <div class="section">
-            <h2>About</h2>
+            <h2>О реестре</h2>
             <p>
-                Binary package repository for Dexoron projects. Precompiled packages for
-                multiple Linux distributions — install without building from source.
+                Реестр бинарных пакетов проектов Dexoron. Готовые сборки для популярных
+                дистрибутивов Linux — установка без компиляции из исходного кода.
             </p>
         </div>
 
         <div class="section">
-            <h2>Packages</h2>
+            <h2>Пакеты</h2>
             <table class="pkg-table">
                 <thead>
                     <tr>
-                        <th>Package</th>
-                        <th>Description</th>
-                        <th>Platforms</th>
+                        <th>Пакет</th>
+                        <th>Описание</th>
+                        <th>Платформы</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>dcr</td>
-                        <td>Utility for managing C/C++ projects in a Cargo-like style</td>
+                        <td>Утилита для управления C/C++ проектами в Cargo-like стиле</td>
                         <td>
-                            <span class="badge"><img src="./assets/arch.svg" alt="arch"></span>
+                            <span class="badge"><img src="../assets/arch.svg" alt="arch"></span>
                         </td>
                     </tr>
                 </tbody>
@@ -268,16 +268,16 @@
         </div>
 
         <div class="section">
-            <h2>Setup</h2>
-            <p>Choose your distribution for setup instructions.</p>
+            <h2>Установка</h2>
+            <p>Выберите ваш дистрибутив для инструкции по установке.</p>
             <div class="cards">
                 <div class="card">
-                    <h3><span class="tag"><img src="./assets/arch.svg" alt="arch"></span> Arch Linux</h3>
-                    <p>Add the repository to <code>/etc/pacman.conf</code> and install <strong>dcr</strong>:</p>
+                    <h3><span class="tag"><img src="../assets/arch.svg" alt="arch"></span> Arch Linux</h3>
+                    <p>Добавьте репозиторий в <code>/etc/pacman.conf</code> и установите <strong>dcr</strong>:</p>
                     <div class="step">
                         <div class="step-num">1</div>
                         <div class="step-content">
-                            <p>Append the following to <code>/etc/pacman.conf</code>:</p>
+                            <p>Допишите в конец <code>/etc/pacman.conf</code>:</p>
                             <pre>
 <span class="comment"># /etc/pacman.conf</span>
 [dexoron]
@@ -288,27 +288,27 @@ Server = https://dexoron.github.io/packages/archlinux/$arch</pre>
                     <div class="step">
                         <div class="step-num">2</div>
                         <div class="step-content">
-                            <p>Refresh package databases and install <strong>dcr</strong>:</p>
+                            <p>Обновите базу пакетов и установите <strong>dcr</strong>:</p>
                             <pre>sudo pacman -Sy dcr</pre>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3><span class="tag"><img src="./assets/deb.svg" alt="deb"></span> Debian / Ubuntu</h3>
-                    <p class="coming-soon">Packages coming soon.</p>
+                    <h3><span class="tag"><img src="../assets/deb.svg" alt="deb"></span> Debian / Ubuntu</h3>
+                    <p class="coming-soon">Пакеты скоро появятся.</p>
                 </div>
 
                 <div class="card">
-                    <h3><span class="tag"><img src="./assets/fed.svg" alt="fed"></span> Fedora / RHEL</h3>
-                    <p class="coming-soon">Packages coming soon.</p>
+                    <h3><span class="tag"><img src="../assets/fed.svg" alt="fed"></span> Fedora / RHEL</h3>
+                    <p class="coming-soon">Пакеты скоро появятся.</p>
                 </div>
             </div>
         </div>
 
         <div class="section">
-            <h2>Verify</h2>
-            <p>Check that <strong>dcr</strong> installed correctly:</p>
+            <h2>Проверка</h2>
+            <p>Убедитесь, что <strong>dcr</strong> установлен корректно:</p>
             <pre>dcr --version</pre>
         </div>
 
