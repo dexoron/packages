@@ -18,8 +18,8 @@ Precompiled packages for multiple Linux distributions — install without buildi
 1. Install the keyring package to trust the repository:
 
 ```bash
-sudo pacman -U https://pkg.dexoron.su/archlinux/x86_64/dexoron-keyring-20260528-1-any.pkg.tar.zst
-
+curl -O https://pkg.dexoron.su/archlinux/x86_64/dexoron-keyring-20260528-1-any.pkg.tar.zst
+sudo pacman -U dexoron-keyring-20260528-1-any.pkg.tar.zst
 ```
 
 2. Add the repository to `/etc/pacman.conf`:

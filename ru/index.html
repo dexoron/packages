@@ -510,8 +510,9 @@
                         <p class="step-desc">Установите пакет с ключами для доверия к репозиторию:</p>
                         <div class="code-block">
                             <div class="code-block-inner">
-                                <pre>sudo pacman -U https://pkg.dexoron.su/archlinux/x86_64/dexoron-keyring-20260528-1-any.pkg.tar.zst</pre>
-                                <button class="copy-btn" title="Копировать" onclick="copyCode(this, 'sudo pacman-key --recv-keys 74322D39483E9C9E8C86C0AA0770A5C2A2A82DAC\nsudo pacman-key --lsign-key 74322D39483E9C9E8C86C0AA0770A5C2A2A82DAC')">
+                                <pre>curl -O https://pkg.dexoron.su/archlinux/x86_64/dexoron-keyring-20260528-1-any.pkg.tar.zst
+sudo pacman -U dexoron-keyring-20260528-1-any.pkg.tar.zst</pre>
+                                <button class="copy-btn" title="Copy" onclick="copyCode(this, 'curl -O https:\/\/pkg.dexoron.su/archlinux/x86_64/dexoron-keyring-20260528-1-any.pkg.tar.zst\nsudo pacman -U dexoron-keyring-20260528-1-any.pkg.tar.zst')">
                                     <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                                 </button>
                             </div>

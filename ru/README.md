@@ -18,8 +18,8 @@
 1. Установите пакет с ключами для доверия к репозиторию:
 
 ```bash
-sudo pacman -U https://pkg.dexoron.su/archlinux/x86_64/dexoron-keyring-20260528-1-any.pkg.tar.zst
-
+curl -O https://pkg.dexoron.su/archlinux/x86_64/dexoron-keyring-20260528-1-any.pkg.tar.zst
+sudo pacman -U dexoron-keyring-20260528-1-any.pkg.tar.zst
 ```
 
 2. Добавьте репозиторий в `/etc/pacman.conf`:
