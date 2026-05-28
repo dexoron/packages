@@ -1,0 +1,13 @@
+pkgname=dexoron-keyring
+pkgver=20260528
+pkgrel=1
+pkgdesc="Dexoron repository public keys"
+arch=('any')
+license=('GPL-3.0-or-later')
+source=('dexoron.gpg')
+sha256sums=('f2de588457d4053ae2f4ce69790226c04cce34d39563bd93f1d4f415ed435814')
+
+package() {
+    install -Dm644 dexoron.gpg "$pkgdir/usr/share/pacman/keyrings/dexoron.gpg"
+    install -Dm644 /dev/null "$pkgdir/usr/share/pacman/keyrings/dexoron-trusted"
+}
