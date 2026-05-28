@@ -1,0 +1,7 @@
+Origin: Dexoron
+Suite: stable
+Architectures: amd64
+Components: main
+Date: Thu, 28 May 2026 10:17:11 +0000
+SHA256:
+ 27fd94ff710182399ef0b0bc70b3157f9e62306c0660eebcd5fcabe114e789e9 Packages.gz
