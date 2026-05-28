@@ -1,0 +1,6 @@
+[dexoron]
+name=Dexoron Packages
+baseurl=https://pkg.dexoron.su/fedora/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=https://pkg.dexoron.su/dexoron.gpg
