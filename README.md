@@ -27,7 +27,7 @@ sudo pacman -U dexoron-keyring-20260528-1-any.pkg.tar.zst
 ```ini
 # /etc/pacman.conf
 [dexoron]
-SigLevel = Required DatabaseOptional
+SigLevel = Required PackageOptional
 Server = https://pkg.dexoron.su/archlinux/$arch
 
 ```
